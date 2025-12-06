@@ -1,4 +1,4 @@
-public class try {
+public class Main {
     static int countPartitions(int[] nums) {
         int tsum = 0;
         for(int i=0;i<nums.length;i++){
@@ -18,9 +18,6 @@ public class try {
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
         }
-        
-        
-        
         return -1;
     }
     public static void main(String[] args) {
