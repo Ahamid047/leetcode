@@ -1,4 +1,4 @@
-class LargestPrime {
+class largest_prime {
 
     public static boolean isPrime(int x) {
         if (x <= 1) return false;
