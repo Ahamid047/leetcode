@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class countodds {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the value of the number you want to checks the odds in between");
+        System.out.println("Enter the number up to which you want to count for odd numbers (inclusive):");
         int low = sc.nextInt();
         int high = sc.nextInt();
 

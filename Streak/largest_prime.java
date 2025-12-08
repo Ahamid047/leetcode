@@ -24,7 +24,7 @@ class largest_prime {
     }
 
     public static void main(String[] args) {
-        int n = 20;
+        int n = 101;
         System.out.println(largestPrime(n));
     }
 }
