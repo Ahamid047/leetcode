@@ -5,10 +5,13 @@ public class Mixpattern {
 
     public static void main(String[] args) {
         System.out.println("Enter L for left Pyramid");
-        System.out.println("Enter R for left Pyramid");
-        System.out.println("Enter C for left Pyramid");
+        System.out.println("Enter R for right Pyramid");
+        System.out.println("Enter C for centered Pyramid");
+        System.out.println("Enter hs for hollow square Pyramid");
         Scanner Choice = new Scanner(System.in);
-        String s = Choice.nextLine();
+        String s = Choice.nextLine().toUpperCase();
+        
+
 
         if (s.equals("L")) {
             leftPyramid();
@@ -16,8 +19,10 @@ public class Mixpattern {
             centerPyramid();
         } else if (s.equals("R")) {
             rightPyramid();
-
-        } else {
+        } else if (s.equals("HS" ) ) {
+            hollowsquare();
+            
+        }else {
             System.out.println("Invalid Choice");
         }
 
@@ -57,7 +62,7 @@ public class Mixpattern {
         System.out.println("Enter the height of the pyramid");
         Scanner newrows = new Scanner(System.in);
         int n = newrows.nextInt();
-        System.out.println("");
+        
         for (int i = n; i >= 1; i--) {
             for (int j = 1; j <= n; j++) {
                 if (i > j) {
@@ -69,7 +74,30 @@ public class Mixpattern {
             System.out.println("");
 
         }
+    }
+
+        
+
+    static void hollowsquare() {
+        System.out.println("Enter the height of the square");
+        Scanner newrows = new Scanner(System.in);
+        int n= newrows.nextInt();
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i==1 || i==n ||j==1||j==n){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+           
+        }
+
 
     }
 
 }
+
+
