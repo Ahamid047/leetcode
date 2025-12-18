@@ -1,8 +1,6 @@
 package oops;
-
-
 class first{
-     int n=10;
+    int n=10;
     public void write(){
         System.out.println("writing");
     }
