@@ -1,4 +1,4 @@
-class Student{
+class Students{
     String name;
     int age;
 
@@ -9,19 +9,22 @@ class Student{
     } 
 
     //creating parameterized constructor
-    // Student (String name, int age){
-    //     this.name = name;
-    //     this.age =age;
-    // }
+    Students (String name, int age){
+        this.name = name;
+        this.age =age;
+    }
 }
 public class c1 {
     public static void main(String[] args) {
         //creating object for the class student
 
-        Student s1 = new Student();
-        s1.name = "Abdul";
+        Students s1 = new Students("Abdul", 21);
+        // s1.name = "Abdul";
         
+        // s1.age=21;
+       
         s1.printinfo();
+        // System.out.println();
 
         
     }
