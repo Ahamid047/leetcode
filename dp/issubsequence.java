@@ -1,8 +1,8 @@
-package practice;
+package dp;
 
-class news {
+public class issubsequence {
     public static void main(String[] args) {
         
-        
     }
+    
 }
