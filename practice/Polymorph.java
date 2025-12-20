@@ -11,7 +11,11 @@ class Student1{
         System.out.println(name+ " "+ age);
         
     }
-
+//Note: Demonstrates method overloading, which is a type of compile-time polymorphism in Java
+// Both methods are named print
+// They have different parameter lists
+// This is called method overloading
+// Java decides which method to call at compile time based on arguments
 
 
 }

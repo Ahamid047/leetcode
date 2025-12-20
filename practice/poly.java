@@ -10,9 +10,6 @@ class Student{
         System.out.println(name+ " "+ age);
         
     }
-
-
-
 }
 public class poly {
     public static void main(String args[]){
