@@ -14,7 +14,7 @@ public class factorial {
         int n = sc.nextInt();
         
 
-        System.out.println(fxn(5));
+        System.out.println(fxn(n));
         
     }
 }
