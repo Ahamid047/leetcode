@@ -1,4 +1,4 @@
-class Car{
+class Car00{
     String color;
     int price;
 
@@ -7,15 +7,19 @@ class Car{
 
     }
 }
-public class objectclass {
+public class obj{
     public static void main(String[] args) {
-
-        Car Mycar= new Car();
+        Car00 Mycar= new Car00();
         Mycar.color = "blue";
         Mycar.price = 344555;
         Mycar.display();
 
+        Car00 car2= new Car00();
+        car2.color="blue";
+        car2.price =300000;
+        car2.display();
+
         
     }
-    
 }
+
