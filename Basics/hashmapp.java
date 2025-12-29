@@ -20,6 +20,9 @@ public class hashmapp {
             System.out.println("not present");
         }
 
+         System.out.println(map.get(5));
+        
+
         
     }
 }
