@@ -19,6 +19,6 @@ public class hashmapcode {
             System.out.println("Key: " + key + ", Value: " + value);
         }
 
-        //use of keySet:- to get the all  the key value from the hashset
+        //use of keySet():- to get the all  the key value from the hashset
     }
 }
