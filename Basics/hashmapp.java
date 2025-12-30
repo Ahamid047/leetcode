@@ -12,7 +12,7 @@ public class hashmapp {
         System.out.println(map); // printed the last updated value
 
 
-        map.remove(1);
+        // map.remove(1);
         if(map.containsKey(1)){
             System.out.println("present ");
 
@@ -21,6 +21,10 @@ public class hashmapp {
         }
 
          System.out.println(map.get(5));
+
+         for()
+
+
         
 
         
