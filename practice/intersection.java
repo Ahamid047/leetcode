@@ -15,6 +15,7 @@ public class intersection {
         for(int j =0;j<arr2.length;j++){
             if(set.contains(arr2[j])){
                 count++;
+                set.remove(arr2[j]);
             }
         }
         System.out.println(count);
