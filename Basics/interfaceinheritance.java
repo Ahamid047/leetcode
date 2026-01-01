@@ -10,7 +10,7 @@ class B implements  A,D{
      public void show(){
         System.out.println("showing");
     }
-    int a ;
+    // int a ;
     
 }
 class C implements A,D{
@@ -38,7 +38,7 @@ public class interfaceinheritance {
         obj.print();
         obj.show();
         // D obj2 = new B();
-        
+
         // You don’t need to create an object to access a variable from an interface
 
         System.out.println(D.a);
