@@ -3,13 +3,14 @@ interface A{
     void show();
 }
 //inheritance 
-class B implements  A{
+class B implements  A,D{
     public void print(){
         System.out.println("class 2");
     }
      public void show(){
         System.out.println("showing");
     }
+    int a ;
     
 }
 class C implements A,D{
@@ -25,8 +26,8 @@ class C implements A,D{
 }
 
 interface D{
-    int a=2;
-    public void fxn();
+    final int a=2;
+    // public void fxn();
 
 }
 
@@ -36,8 +37,13 @@ public class interfaceinheritance {
         A obj = new B();
         obj.print();
         obj.show();
-        D obj2 = new C();
+        // D obj2 = new B();
+        
+        // You don’t need to create an object to access a variable from an interface
+
+        System.out.println(D.a);
+        // D obj2 = new C();
         // obj2.print();
-        obj2.fxn();
+        // obj2.fxn();
     }
 }
