@@ -41,6 +41,7 @@ public class linkedL {
     public void printList() {
         if(head == null){
             System.out.println("list is empty");
+            return;   
         }
         Node curr = head;
         while (curr != null) {
@@ -50,12 +51,21 @@ public class linkedL {
         System.out.println("null");
     }
 
+    public void deleteFirst(){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        head = head.next;
+    }
+
     public static void main(String[] args) {
         //Object
         linkedL list = new linkedL();
         list.addFirst("May");
         list.addLast("I");
         list.addLast("Come in");
+        list.deleteFirst();
         list.printList();
 
     }
