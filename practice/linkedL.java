@@ -83,6 +83,7 @@ public class linkedL {
         list.addLast("I");
         list.addLast("Come in");
         list.deleteFirst();
+        list.deleteLast();
         list.printList();
 
     }
