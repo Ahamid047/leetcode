@@ -25,6 +25,19 @@ public class linkedL {
         head = newNode;
 
     }
+    public void addLast(String data){
+        Node newNode = new Node (data);
+        if(head == null){
+            head = newNode;
+            return;
+        }
+        Node currNode = head;
+        while(currNode.next !=null){
+            currNode = currNode.next;
+        }
+        currNode.next=newNode;
+        
+    }
     public void printList() {
         Node curr = head;
         while (curr != null) {
@@ -38,7 +51,8 @@ public class linkedL {
         //Object
         linkedL list = new linkedL();
         list.addFirst("May");
-        list.addFirst("I");
+        list.addLast("I");
+        list.addLast("Come in");
         list.printList();
 
     }
