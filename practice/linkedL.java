@@ -39,6 +39,9 @@ public class linkedL {
         
     }
     public void printList() {
+        if(head == null){
+            System.out.println("list is empty");
+        }
         Node curr = head;
         while (curr != null) {
             System.out.print(curr.data + " -> ");
