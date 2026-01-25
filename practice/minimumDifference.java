@@ -1,17 +1,14 @@
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class minimumDifference {
     private static int mindiff(int[] arr, int k){
-        Scanner sc = new Scanner(System.in);
+        Arrays.sort(arr);
         int min = Integer.MAX_VALUE;
-        for(int i=0;i<arr.length;i++){
-            for(int j =0;j<arr.length;j++){
-                if(arr[i]-arr[j]<min){
-                    min = Math.abs(arr[i]-arr[j]);
-                
-                }
-            }
+        for(int i=0;i+k-1<arr.length;i++){
+            min= Math.min(min,arr[i+k-1]- arr[i]);
+            
         }
         return min;
         
@@ -30,11 +27,8 @@ public class minimumDifference {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        for (int j = 0; j < n; j++) {
-
-            System.out.print(arr[j]+" ");
-
-        }
+        int res = mindiff(arr,k);
+        System.out.println(res);
 
         
 
