@@ -100,8 +100,10 @@ public class linkedL {
         list.addFirst("May");
         list.addLast("I");
         list.addLast("Come in");
-        list.deleteFirst();
-        list.deleteLast();
+        // list.deleteFirst();
+        // list.deleteLast();
+        list.printList();
+        list.reversell();
         list.printList();
 
     }
